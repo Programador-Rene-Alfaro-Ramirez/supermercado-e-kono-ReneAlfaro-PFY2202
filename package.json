@@ -1,7 +1,7 @@
 {
 "name": "supermercado-e-kono",
   "version": "0.1.0",
-  "homepage": "https://Programador-Rene-Alfaro-Ramirez.github.io/supermercado-e-kono-ReneAlfaro-PFY2202",
+"homepage": "https://Programador-Rene-Alfaro-Ramirez.github.io/supermercado-e-kono-ReneAlfaro-PFY2202",
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
@@ -13,12 +13,14 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
