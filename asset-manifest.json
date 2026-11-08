@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/css/main.29c8ad1a.css",
+    "main.js": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/js/main.2d7d5401.js",
+    "static/js/453.13822ba8.chunk.js": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/js/453.13822ba8.chunk.js",
+    "index.html": "/supermercado-e-kono-ReneAlfaro-PFY2202/index.html",
+    "main.29c8ad1a.css.map": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/css/main.29c8ad1a.css.map",
+    "main.2d7d5401.js.map": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/js/main.2d7d5401.js.map",
+    "453.13822ba8.chunk.js.map": "/supermercado-e-kono-ReneAlfaro-PFY2202/static/js/453.13822ba8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29c8ad1a.css",
+    "static/js/main.2d7d5401.js"
+  ]
+}
