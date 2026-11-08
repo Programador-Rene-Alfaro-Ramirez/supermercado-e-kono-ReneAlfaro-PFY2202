@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { InventoryContext } from '../context/InventoryContext';
 
 export default function Cart() {
@@ -13,7 +13,6 @@ export default function Cart() {
       {cart.length === 0 ? (
         <div className="text-center bg-white p-12 rounded-lg shadow-md">
           <p className="text-xl text-gray-500 mb-6">El carrito está vacío.</p>
-          {/* Botón en rojo Ekono */}
           <Link 
             to="/" 
             className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors"
@@ -30,7 +29,6 @@ export default function Cart() {
                 <div className="flex-1 mb-4 sm:mb-0">
                   <h3 className="text-xl font-bold text-gray-800">{item.name}</h3>
                   <p className="text-sm text-gray-500">{item.category}</p>
-                  {/* Precio unitario en rojo Ekono */}
                   <p className="text-lg font-semibold text-red-600 mt-1">${item.price}</p>
                 </div>
 
@@ -53,7 +51,6 @@ export default function Cart() {
                     </button>
                   </div>
                   <div className="w-24 text-right">
-                    {/* Precio por cantidad en rojo Ekono */}
                     <span className="font-bold text-red-600">${item.price * item.quantity}</span>
                   </div>
                 </div>
@@ -64,7 +61,6 @@ export default function Cart() {
           <div className="bg-gray-50 p-6 border-t border-gray-200">
             <div className="flex justify-between items-center mb-6">
               <span className="text-2xl font-bold text-gray-700">Total a Pagar:</span>
-              {/* Total final en rojo Ekono */}
               <span className="text-3xl font-black text-red-600">${totalAmount}</span>
             </div>
             <div className="flex justify-end space-x-4">
@@ -74,7 +70,6 @@ export default function Cart() {
               >
                 Seguir Comprando
               </Link>
-              {/* Botón de finalizar en amarillo Ekono con texto rojo */}
               <button 
                 className="bg-yellow-400 hover:bg-yellow-500 text-red-700 font-extrabold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all"
                 onClick={() => alert('¡Compra simulada con éxito!')}

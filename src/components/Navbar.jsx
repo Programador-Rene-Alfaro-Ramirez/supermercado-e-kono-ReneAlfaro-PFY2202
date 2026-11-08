@@ -1,12 +1,9 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router'; 
 import { InventoryContext } from '../context/InventoryContext';
 
 export default function Navbar() {
-  // 1. Traemos el carrito desde el contexto global
   const { cart } = useContext(InventoryContext);
-
-  // 2. Calculamos el total de unidades que hay en el carrito
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -20,7 +17,6 @@ export default function Navbar() {
           <li>
             <Link to="/agregar" className="hover:text-red-800 transition-colors">Ingresar Artículo</Link>
           </li>
-          {/* 3. Nuevo enlace al carrito con un indicador visual de cantidad */}
           <li>
             <Link 
               to="/carrito" 

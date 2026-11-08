@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router';
 import { InventoryContext } from '../context/InventoryContext';
 
 export default function ArticleDetail() {
@@ -34,7 +34,6 @@ export default function ArticleDetail() {
 
   return (
     <div className="container mx-auto mt-8 max-w-2xl">
-      {/* Botón volver en rojo Ekono */}
       <button 
         onClick={() => navigate('/')} 
         className="text-red-600 hover:text-red-800 hover:underline mb-6 font-semibold flex items-center"
@@ -45,7 +44,6 @@ export default function ArticleDetail() {
       <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
         <div className="p-8">
           <h1 className="text-4xl font-extrabold text-gray-800 mb-2">{article.name}</h1>
-          {/* Categoría en rojo Ekono */}
           <p className="text-sm font-bold text-red-500 mb-6 uppercase tracking-wider">{article.category}</p>
           
           <p className="text-gray-700 mb-8 text-lg leading-relaxed">{article.description}</p>
@@ -79,7 +77,6 @@ export default function ArticleDetail() {
                   +
                 </button>
               </div>
-              {/* Botón Agregar en amarillo Ekono con texto rojo */}
               <button 
                 onClick={handleAddToCart}
                 className="flex-1 bg-yellow-400 hover:bg-yellow-500 text-red-700 font-extrabold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-lg"
